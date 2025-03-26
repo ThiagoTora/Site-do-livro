@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:  #FFDDA9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+main {
+    background-color: #c99e66;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+input {
+    padding: 0.7rem;
+    margin-bottom: 1.2rem;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+button {
+    padding: 0.8rem;
+    background-color: #502803;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+button:hover {
+    background-color: #6f4827;
+}
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #6b5b4a;
+}
+footer a {
+    color: #502803;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+.livro-girando {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    padding: 0;
+
+    animation: girar 7s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas pequenas (mobile) */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+
+    .livro-girando {
+        width: 100px;
+    }
+}
+
+/* Telas médias (tablets) */
+@media (max-width: 768px) {
+    main {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .livro-girando {
+        width: 110px;
+    }
+}
