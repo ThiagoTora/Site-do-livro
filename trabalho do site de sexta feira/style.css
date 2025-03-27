@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+
+body{
+    background-color: #FFDDA9;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.top-bar {
+    background-color: #502803;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+
+
+.logo {
+    width: auto;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.topProps{
+    display: flex;
+}
+
+.areaUsuario{
+    display: flex;
+    gap: 15px;
+    
+}
+
+.cart {
+    position: relative;
+}
+
+.cart span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.Navegacao{
+    display: flex;
+    gap: 30px;
+    background-color: #996c31;
+}
+
+ul{
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+}
+
+#Sessão-1{
+    background: url(../imagens/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#Sessão-1 img{
+    width: 100%;
+    height: auto;
+    
+}
+
+
+.P1{
+    height: auto;
+    width: 100%;
+    padding: 4rem;
+    justify-content: center;
+}
+
+.Sessão-Carousel{
+    
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    color: white;
+    background-color: #ac7b3c;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #502803;
+
+}
+
+#Categoria{
+    color: #502803; 
+}
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.card {
+    
+    min-width: 20%;
+    height: 20rem;
+    background-color: #aa7f48;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 10rem;
+
+    margin: 10px;
+    padding: 10px;
+    padding-top: 30px;
+
+    text-align: center;
+    justify-content: center;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: row;
+    justify-content: space-between;
+    
+   
+    box-shadow: 1px 1px 7px #502803;
+    border: 1.5px solid #502803;
+
+}
+
+.card img{
+    margin: auto;
+}
+
+.card p{
+    text-shadow: 2px 2px 5px #502803;
+    white-space: normal;
+    word-wrap: break-word;  
+    overflow-wrap: break-word;  
+    max-width: 100%; 
+}
+.Preco{
+    font-size: 12px;
+}
+.card button {
+  
+    min-width: 15%;
+    background-color: #c99e66;
+    border: 1.5px solid #502803;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: #ac7b3c;
+    transition: background-color 0.5s;
+}
+img {
+    width: 120px;
+    height: 150px;
+}
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
