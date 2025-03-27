@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel='stylesheet' href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="topProps">
+            <img class="logo" src="../imagens/207114.png">
+                <h2>Booklândia</h2>
+            </div>
+            
+            <div class="areaUsuario">
+                <div>
+                    <a href="#">Login ou cadastro</a>
+                </div>
+                <div class="cart">
+                    🛒<span>0</span>
+                </div>
+            </div>
+        </div>
+        <nav class="Navegacao">
+            Categorias
+            <ul>
+                <li ><a href="#Categoria">Terror</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="Sessão-1">
+        <div class="P1">
+            <img src="../imagens/image.png">
+            <h1>Bem vindo</h1>
+        </div>
+    </section>
+
+    <section>
+
+        <article class="Sessão-Carousel">
+            <h1 id="Categoria"> Terror </h1>
+            <div class="carousel-container">
+            
+                <div class="carousel" id="carousel">
+                    <div class="card">
+                        <div>
+                        <img src="../imagens/91Rh0D2brbL.jpg" alt="FNAF">
+                        </div>
+                       
+                            <p>Olhos Prateados</p>
+                            <p class="Preco">R$ 49,90</p>
+                        
+                        <button>COMPRAR</button>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                        <img src="../imagens/91Rh0D2brbL.jpg" alt="FNAF">
+                        </div>
+                       
+                            <p>Olhos Prateados</p>
+                            <p class="Preco">R$ 49,90</p>
+                        
+                        <button>COMPRAR</button>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                        <img src="../imagens/91Rh0D2brbL.jpg" alt="FNAF">
+                        </div>
+                       
+                            <p>Olhos Prateados</p>
+                            <p class="Preco">R$ 49,90</p>
+                        
+                        <button>COMPRAR</button>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                        <img src="../imagens/91Rh0D2brbL.jpg" alt="FNAF">
+                        </div>
+                       
+                            <p>Olhos Prateados</p>
+                            <p class="Preco">R$ 49,90</p>
+                        
+                        <button>COMPRAR</button>
+                    </div>
+                    <div class="card">
+                        <div>
+                        <img src="../imagens/91Rh0D2brbL.jpg" alt="FNAF">
+                        </div>
+                       
+                            <p>Olhos Prateados</p>
+                            <p class="Preco">R$ 49,90</p>
+                        
+                        <button>COMPRAR</button>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                        <img src="../imagens/91Rh0D2brbL.jpg" alt="FNAF">
+                        </div>
+                       
+                            <p>Olhos Prateados</p>
+                            <p class="Preco">R$ 49,90</p>
+                        
+                        <button>COMPRAR</button>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                        <img src="../imagens/91Rh0D2brbL.jpg" alt="FNAF">
+                        </div>
+                       
+                            <p>Olhos Prateados</p>
+                            <p class="Preco">R$ 49,90</p>
+                        
+                        <button>COMPRAR</button>
+                    </div>
+
+                    
+                </div>
+                <button class="btn next" onclick="moveCarousel(1)">&#10095;</button>
+                <button class="btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+            </div>
+            <script>
+                let index = 0;
+                function moveCarousel(step) {
+                    const carousel = document.getElementById('carousel');
+                    const totalCards = document.querySelectorAll('.card').length;
+                    const maxIndex = totalCards - 4;
+                    index = Math.min(Math.max(index + step, 0), maxIndex);
+                    carousel.style.transform = `translateX(-${index * 25}%)`;
+                }
+            </script>
+        </article>
+    </section>
+</body>
+</html>
